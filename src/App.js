@@ -2,10 +2,11 @@ import { useState } from 'react';
 import './App.css';
 import Header from './components/header';
 function App() {
-  const [number, setNumber] = useState(0)
+  const [number, setNumber] = useState(0);
+  const data = { name: 'Yusuf t' };
   return (
     <div className="App">
-      <Header number={number < 5 ? 0 : number} />
+      <Header number={number < 5 ? 0 : number} data={data} />
       <header className="App-header">
         <h1> {number} </h1>
         <button onClick={() => setNumber(number + 1)}>Click</button>
