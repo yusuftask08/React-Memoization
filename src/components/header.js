@@ -1,12 +1,11 @@
 import React from "react";
 
-function header({ number, data }) {
+function header({ number, increment }) {
     console.log(number, 'header component re render')
     return <div>
         Headers
-
         <div>
-            <code> {JSON.stringify(data)} </code>
+            <button onClick={increment}>Click</button>
         </div>
     </div>;
 }
