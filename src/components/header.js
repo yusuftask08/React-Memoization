@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 
 function header({ number, data }) {
     console.log(number, 'header component re render')
@@ -11,4 +11,4 @@ function header({ number, data }) {
     </div>;
 }
 
-export default react.memo(header);
+export default React.memo(header);
